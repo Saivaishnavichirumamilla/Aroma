@@ -1,0 +1,10 @@
+{
+  "name": "aroma",
+  "version": "1.0.0",
+  "description": "Food ordering website",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Saivaishnavi",
+  "license": "ISC"
+}
