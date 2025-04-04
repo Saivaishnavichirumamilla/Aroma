@@ -3,8 +3,31 @@
   "version": "1.0.0",
   "description": "Food ordering website",
   "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html",
     "test": "jest"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Saivaishnavichirumamilla/Aroma.git"
+  },
+  "@parcel/resolver-default": {
+    "packageExports": true
+  },
   "author": "Saivaishnavi",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.13.3",
+    "process": "^0.11.10"
+  },
+  "dependencies": {
+    "@reduxjs/toolkit": "^2.6.1",
+    "@tailwindcss/postcss": "^4.0.14",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-redux": "^9.2.0",
+    "react-router": "^7.2.0",
+    "react-router-dom": "^7.2.0",
+    "tailwindcss": "^4.0.14"
+  }
 }

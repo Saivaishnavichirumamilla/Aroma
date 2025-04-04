@@ -1,0 +1,677 @@
+.root {
+  font-family: sans-serif;
+}
+.body {
+  margin: 50px 150px;
+}
+
+/*Header */
+.header {
+  position: sticky;
+  top: 0px;
+  z-index: 1000;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 25px;
+  font-weight: 400;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  align-items: center;
+  background-color: rgb(53, 124, 57);
+}
+.logo-img {
+  margin-left: 30px;
+  width: 150px;
+  height: 65px;
+  border-radius: 100px;
+}
+.nav-items ul {
+  display: flex;
+  gap: 70px;
+  list-style-type: none;
+  margin-right: 50px;
+}
+.nav-items a {
+  text-decoration: none;
+  color: white;
+}
+.nav-items a:active {
+  color: black;
+}
+
+.log-btn {
+  color: rgb(53, 124, 57);
+  font-weight: bold;
+  padding: 12px 30px;
+  border-radius: 10px;
+  border: none;
+}
+
+/*Collections cards*/
+.collections-container {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  margin-bottom: 50px;
+}
+.collections-container::-webkit-scrollbar {
+  display: none;
+}
+.collections-card img {
+  width: 150px;
+  cursor: pointer;
+}
+
+/*Restro Cards headline*/
+.restrocards-headline {
+  font-size: 24px;
+  font-weight: bold;
+  border-top: 2px solid lightgray;
+  margin-top: 30px;
+}
+
+/*Restro cards container*/
+.restro-container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  overflow-x: visible;
+  text-decoration: none;
+}
+.restro-container a {
+  text-decoration: none;
+  color: black;
+}
+.restro-card {
+  padding: 10px;
+  width: 200px;
+  height: 300px;
+}
+.restro-card:hover {
+  border: 2px solid rgba(137, 134, 134, 0.468);
+  border-radius: 10px;
+  cursor: pointer;
+}
+.card-img {
+  width: 100%;
+  height: 60%;
+  border-radius: 10px;
+}
+.cardline-one {
+  margin-top: 10px;
+  height: 30px;
+  padding: 0px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.cardline-one h5 {
+  width: 60%;
+}
+.cardline-one p {
+  background-color: rgba(4, 92, 39, 0.863);
+  padding: 2px 10px;
+
+  color: white;
+  font-size: 12px;
+  border-radius: 10px;
+}
+
+.cardline-two {
+  margin-top: 10px;
+  height: 30px;
+  padding: 0px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Search Bar*/
+.search-bar {
+  display: flex;
+  gap: 10px;
+  margin-top: 100px;
+  margin-left: 200px;
+  margin-bottom: 70px;
+}
+.search-input {
+  width: 500px;
+  padding: 10px 5px;
+  border: 2px solid rgb(116, 151, 116);
+  border-radius: 10px;
+}
+.search-input:focus {
+  outline: none;
+  border: 3px solid rgb(62, 115, 57);
+}
+.search-btn {
+  border-radius: 10px;
+  width: 100px;
+  border: none;
+  background-color: rgb(53, 124, 57);
+  color: white;
+  cursor: pointer;
+}
+.search-btn:focus {
+  background-color: rgb(119, 168, 114);
+}
+
+/*Filter Button*/
+.filter-btn {
+  margin: 30px;
+  padding: 10px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  background-color: white;
+  color: rgb(70, 67, 67);
+  font-weight: bold;
+  font-size: 14px;
+  border: 1px solid gray;
+  box-shadow: 2px;
+}
+
+.filter-btn:focus {
+  background-color: rgba(172, 168, 168, 0.518);
+}
+
+/*Shimmer UI*/
+.shimmer-container {
+  margin: 10px;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.shimmer-card {
+  padding: 10px;
+  width: 200px;
+  height: 300px;
+  background-color: rgba(236, 233, 233, 0.413);
+  border-radius: 10px;
+}
+.shimmer-search-input {
+  width: 500px;
+  padding: 10px 5px;
+  background-color: rgba(236, 233, 233, 0.413);
+  border-radius: 10px;
+  border: none;
+}
+
+/*  Restaurant Menu design*/
+.restro-menu-container {
+  width: 800px;
+
+  margin-left: 200px;
+  margin-top: 50px;
+}
+.menu-header {
+  border: 1px solid rgb(237, 235, 235, 0.422);
+  background-color: rgb(237, 235, 235, 0.422);
+  border-radius: 20px;
+  padding: 20px;
+}
+.menu-header h1 {
+  padding: 0px 20px 0px 10px;
+}
+.menu-header-sub {
+  border: 1px solid rgba(114, 111, 111, 0.422);
+  border-radius: 20px;
+  background-color: white;
+
+  padding: 15px;
+  padding-bottom: 30px;
+  font-weight: bold;
+}
+.menu-header-sub1 {
+  display: flex;
+  gap: 20px;
+}
+.menu-header-sub2 {
+  color: rgb(53, 124, 57);
+}
+.menu-header-sub3 {
+  margin-top: 10px;
+}
+.menu-header-tag {
+  color: rgb(53, 124, 57);
+  border-top: 1px solid rgba(114, 111, 111, 0.422);
+  font-size: 18px;
+  margin-top: 20px;
+  padding-top: 10px;
+}
+.menu-design {
+  text-align: center;
+  margin: 50px 10px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+/* Veg and non-veg filter*/
+.v-or-nv-filter {
+  display: flex;
+  gap: 30px;
+  margin: 10px;
+  margin-left: 30px;
+  margin-bottom: 50px;
+}
+.v-or-nv-filter button {
+  width: 90px;
+  padding: 10px 10px;
+  border-radius: 20px;
+
+  cursor: pointer;
+  background-color: white;
+  font-size: 16px;
+  font-weight: bold;
+}
+.veg-btn {
+  color: green;
+  border: 2px solid green;
+}
+.veg-btn:focus {
+  background-color: green;
+  color: white;
+}
+.nonveg-btn {
+  color: rgb(189, 9, 9);
+  border: 2px solid rgb(189, 9, 9);
+}
+.nonveg-btn:focus {
+  background-color: rgb(189, 9, 9);
+  color: white;
+}
+/*dish card*/
+.dish-card-containter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  border-bottom: 1px solid black;
+  margin-bottom: 10px;
+  height: 200px;
+}
+.dish-card-sub1 {
+  width: 75%;
+}
+.veg-symbol {
+  width: 10px;
+  padding: 2px;
+  border: 1.5px solid green;
+  border-radius: 4px;
+}
+.circle {
+  width: 10px;
+  height: 10px;
+  background-color: green;
+  border-radius: 50%;
+}
+.nonveg-symbol {
+  width: 10px;
+  padding: 2px;
+  padding-bottom: 3px;
+  border: 1.5px solid rgb(189, 9, 9);
+  border-radius: 4px;
+}
+.triangle {
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 8px solid rgb(189, 9, 9);
+}
+.dish-card-sub1 h2 {
+  line-height: 5px;
+  color: rgb(65, 63, 63);
+}
+.dish-price {
+  line-height: 15px;
+  font-weight: bold;
+  margin-top: 20px;
+  font-size: 20x;
+}
+.dish-rating {
+  color: green;
+  font-weight: 600;
+  font-size: 14px;
+}
+.dish-rating-count {
+  color: rgb(92, 89, 89);
+}
+.dish-card-sub2 {
+  position: relative;
+}
+.dish-card-sub2 img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+.checked {
+  color: white;
+  padding: 3px;
+  background-color: rgb(36, 149, 36);
+  border-radius: 100px;
+  margin-right: 5px;
+}
+.dish-desc {
+  color: rgb(104, 102, 102);
+  font-weight: 500;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.list-container {
+  margin: 30px 10px;
+  padding: 20px;
+  border-bottom: 15px solid rgb(237, 233, 233);
+  cursor: pointer;
+}
+.list-header {
+  display: flex;
+  justify-content: space-between;
+}
+.list-title {
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.list-symbol {
+  font-size: large;
+  width: 50px;
+}
+
+/*AddorRemove button*/
+.btn-class {
+  position: absolute;
+  left: 30px;
+  bottom: -10px;
+  justify-content: center;
+  background-color: rgb(36, 149, 36);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 10px;
+  width: 55%;
+  border: 2px solid lightgrey;
+}
+.btn-container {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-btn {
+  font-size: 18px;
+  width: 100%;
+  background-color: rgb(36, 149, 36);
+  color: white;
+  border: none;
+  font-weight: bold;
+}
+.sub-btn {
+  border: none;
+  font-size: 18px;
+  width: 100%;
+  background-color: rgb(36, 149, 36);
+  color: white;
+}
+
+/*About us page*/
+.aboutus-heading {
+  text-align: center;
+  font-size: 35px;
+  margin: 40px;
+  font-style: italic;
+  color: rgb(36, 149, 36);
+}
+.aboutus-desc {
+  text-align: center;
+  margin: 30px;
+  font-size: 20px;
+  font-style: italic;
+  color: rgb(98, 97, 97) y;
+}
+.aboutus-coverpic {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+
+  border-radius: 10px;
+}
+.tint {
+  background-color: rgba(0, 0, 0, 0.491);
+  position: absolute;
+  top: 294px;
+  width: 98.7%;
+  height: 500px;
+  border-radius: 10px;
+}
+.aboutus-quote {
+  position: absolute;
+  bottom: 10px;
+  left: 400px;
+  color: white;
+  font-size: 40px;
+  justify-content: center;
+  letter-spacing: 3px;
+  word-spacing: 20px;
+}
+
+/*About us Mission and Values*/
+.mv-container {
+  text-align: center;
+  margin: 30px;
+  width: 80%;
+  margin-top: 60px;
+  margin-left: 100px;
+  margin-bottom: 60px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid grey;
+}
+.mv-container h1 {
+  padding: 10px;
+  margin: 20px;
+}
+.mission {
+  margin-bottom: 10px;
+  cursor: pointer;
+  padding: 10px;
+}
+.mission-title {
+  height: 30px;
+  text-align: center;
+  padding: 10px 20px;
+  font-size: 30px;
+  color: rgb(36, 149, 36);
+}
+
+.mission-desc {
+  font-size: 20px;
+  padding: 20px 30px;
+  border: 2px solid white;
+  border-radius: 20px;
+  background-color: rgba(36, 149, 36, 0.148);
+  margin: 20px 10px;
+}
+
+/*About us developer*/
+.developer {
+  text-align: center;
+  margin-top: 50px;
+  padding-bottom: 30px;
+  margin-bottom: 100px;
+}
+.developer h1 {
+  font-style: italic;
+  color: rgb(81, 79, 79);
+}
+.developer img {
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
+  border-radius: 100%;
+  border: 2px solid rgba(0, 0, 0, 0.642);
+}
+.developer h2 {
+  color: rgb(81, 79, 79);
+}
+.developer h3 {
+  color: rgb(81, 79, 79);
+  font-weight: normal;
+}
+
+/*selected dishes & Cart*/
+.cart-container {
+  margin-top: 50px;
+}
+.cartPrice {
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  font-size: 20px;
+  padding-top: 40px;
+  border-top: 2px solid lightgray;
+}
+.cart-msg {
+  margin-top: 50px;
+  width: 65%;
+  margin-left: auto;
+  font-size: 20px;
+}
+.clearCart-btn {
+  position: sticky;
+  top: 0px;
+  padding: 15px 25px;
+  border-radius: 25px;
+  cursor: pointer;
+  border: 2px solid white;
+  background-color: rgb(180, 176, 176);
+  color: black;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.cart-dishes {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+  width: 80%;
+  padding-bottom: 40px;
+  font-size: 16px;
+}
+.selectedDish-card-containter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+
+  width: 80%;
+}
+.selectedDish-card-sub1 {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  width: 60%;
+}
+.selectedDish-card-sub2 {
+  width: 20%;
+}
+.selectedDish-card-sub3 {
+  width: 20%;
+}
+.selectedDish-card-sub3 button {
+  border-radius: 100%;
+  padding: 8px 12px;
+  background-color: rgba(198, 5, 5, 0.767);
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+}
+.cartSubmit-btn {
+  width: 150px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 70px;
+  margin-bottom: 100px;
+}
+.cartSubmit-btn button {
+  padding: 10px 20px;
+  border-radius: 20px;
+  background-color: rgba(46, 145, 236, 0.861);
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+/*Contatct us*/
+.contactUs-container {
+  width: 100%;
+}
+.contactUs-coverpic {
+  position: relative;
+}
+.contactUs-coverpic img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+}
+.contactUs-coverpic div {
+  position: absolute;
+  top: 150px;
+  left: 350px;
+  font-size: 40px;
+  font-weight: bolder;
+  letter-spacing: 2px;
+  color: white;
+}
+.contactUs-form {
+  width: 70%;
+  padding: 40px 20px;
+  margin: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgba(239, 209, 209, 0.541);
+  border-radius: 10px;
+}
+.entry1 select {
+  padding: 15px 10px;
+  width: 93%;
+  margin: 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  border: 1px solid gainsboro;
+}
+
+.entry input {
+  padding: 15px 10px;
+  width: 90%;
+  margin: 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  border: 1px solid gainsboro;
+}
+.feedback-btn {
+  width: 18%;
+  padding: 15px;
+  background-color: green;
+  border: none;
+  color: white;
+  border-radius: 10px;
+  margin-left: 320px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
